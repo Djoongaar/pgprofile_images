@@ -1,16 +1,18 @@
-version: "3.5"
-
 services:
   pg13:
     container_name: pg13
     build:
       context: "13"
     env_file: ".env"
+    volumes:
+      - ./13/data:/var/lib/postgresql/data
     image: ghcr.io/djoongaar/pgprofile_images/pg13
   pg14:
     container_name: pg14
     build:
       context: "14"
+    volumes:
+      - ./14/data:/var/lib/postgresql/data
     env_file: ".env"
     image: ghcr.io/djoongaar/pgprofile_images/pg14
   pg15:
@@ -18,22 +20,30 @@ services:
     build:
       context: "15"
     env_file: ".env"
+    volumes:
+      - ./15/data:/var/lib/postgresql/data
     image: ghcr.io/djoongaar/pgprofile_images/pg15
   pg16:
     container_name: pg16
     build:
       context: "16"
     env_file: ".env"
+    volumes:
+      - ./16/data:/var/lib/postgresql/data
     image: ghcr.io/djoongaar/pgprofile_images/pg16
   pg17:
     container_name: pg17
     build:
       context: "17"
     env_file: ".env"
+    volumes:
+      - ./17/data:/var/lib/postgresql/data
     image: ghcr.io/djoongaar/pgprofile_images/pg17
   pg18:
     container_name: pg18
     build:
       context: "18"
     env_file: ".env"
+    volumes:
+      - ./18/data:/var/lib/postgresql/data
     image: ghcr.io/djoongaar/pgprofile_images/pg18
