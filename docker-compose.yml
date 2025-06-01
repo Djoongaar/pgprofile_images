@@ -1,0 +1,38 @@
+version: "3.5"
+
+services:
+  pg13:
+    container_name: pg13
+    build:
+      context: "13"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/pg13
+  pg14:
+    container_name: pg14
+    build:
+      context: "14"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/pg14
+  pg15:
+    container_name: pg15
+    build:
+      context: "15"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/pg15
+  pg16:
+    container_name: pg16
+    build:
+      context: "16"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/pg16
+  pg17:
+    container_name: pg17
+    build:
+      context: "17"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/pg17
+  pg18:
+    container_name: pg18
+    build:
+      context: "18"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/pg18
+  app:
+    container_name: app
+    build:
+      context: "app"
+    image: registry.l.postgrespro.ru/e.sharaev/pgprofile_images/app
